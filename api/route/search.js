@@ -20,7 +20,8 @@ router.get("/search", (req, res, next) => {
         });
       });
   }
-  BattelData.find({
+  else {
+    BattelData.find({
     $or: [{ attacker_king: req.query.king }, { defender_king: req.query.king }],
   })
     .exec()
@@ -29,6 +30,7 @@ router.get("/search", (req, res, next) => {
         response: data,
       });
     });
+  }
 });
 
 module.exports = router;
