@@ -2,10 +2,10 @@
   "name": "got_battle_be",
   "version": "1.0.0",
   "description": "This is an example demo application for gam of thrones backend",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "node",
