@@ -36,6 +36,7 @@ router.get("/count", (req, res, next) => {
     .then((data) => {
       res.status(200).json({
         totalCount: data.length,
+        response: data
       });
     });
 });
